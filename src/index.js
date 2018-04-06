@@ -3,9 +3,9 @@ import ReactDOM from 'react-dom'
 import YTSearch from 'youtube-api-search'
 
 import SearchBar from './components/search_bar'
-import API_KEY from './constants/keys'
+import api_key from './constants/keys'
 
-YTSearch({key: API_KEY, term: 'surfboards'}, function(data) {
+YTSearch({key: api_key, term: 'surfboards'}, function(data) {
     console.log(data)
 })
 
