@@ -18,7 +18,7 @@ class App extends Component {
 
         console.log(keys)
 
-        YTSearch({ key: keys.youTubeID, term: 'surfboards' }, (videos) => {
+        YTSearch({ key: keys.youTubeID, term: 'alfredo' }, (videos) => {
             console.log(videos)
             this.setState({
                 videos: videos,
@@ -31,7 +31,7 @@ class App extends Component {
     render() {
         return (
             <div>
-                <SearchBar />
+                {/* <SearchBar /> */}
                 <VideoDetail video={this.state.selectedVideo} />
                 <VideoList
                     onVideoSelect={selectedVideo => this.setState({ selectedVideo })} //Passes function to VideoList
