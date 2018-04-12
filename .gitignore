@@ -1,3 +1,4 @@
+/build
 /node_modules
 /src/constants/keys.js
 bundle.js
@@ -7,4 +8,3 @@ package-lock.json
 # IntelliJ
 *.iml
 /.idea
-/build/*
